@@ -1,0 +1,54 @@
+# Vagrant stuff
+/.vagrant
+
+# IDEs
+.idea
+.vscode
+
+# App artifacts
+/_build
+/db
+/deps
+/*.ez
+
+# Generate on crash by the VM
+erl_crash.dump
+
+# Static artifacts
+node_modules
+
+# Since we are building assets from web/static,
+# we ignore priv/static. You may want to comment
+# this depending on your deployment strategy.
+/priv/static/
+
+npm-debug.log
+selenium-debug.log
+/reports
+
+.DS_STORE
+
+frontend/_build
+yarn-error.log
+/scripts
+__generated-graphql__
+
+.env
+
+# Python
+venv
+*.egg-info
+*.pyc
+
+#IntellIJ stuff
+*.iml
+/.idea
+
+# VSCode ElixirLS extension
+.elixir_ls
+
+# Development environment shell variables set via direnv
+.envrc
+
+# Mnesia
+Mnesia*
