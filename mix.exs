@@ -11,7 +11,9 @@ defmodule XqlVerify.MixProject do
       lockfile: "./mix.lock",
       elixir: "~> 1.7",
       elixirc_paths: paths(Mix.env()),
+      compilers: Mix.compilers(),
       start_permanent: Mix.env() == :prod,
+      build_embedded: Mix.env() == :prod,
       deps: deps()
     ]
   end
@@ -19,6 +21,7 @@ defmodule XqlVerify.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: {XqlVerify, []},
       extra_applications: [:logger, :myxql, :ecto_sql]
     ]
   end
@@ -29,6 +32,7 @@ defmodule XqlVerify.MixProject do
   defp deps do
     [
       {:ecto_sql, "~> 3.2"},
+      {:jason, "~> 1.0"},
       {:myxql, "~> 0.2"},
       {:stream_data, "~> 0.4"}
     ]

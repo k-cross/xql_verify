@@ -9,3 +9,5 @@ config :xql_verify, XqlVerify.Repo,
   hostname: "localhost"
 
 config :xql_verify, ecto_repos: [XqlVerify.Repo]
+
+import_config "#{Mix.env()}.exs"
