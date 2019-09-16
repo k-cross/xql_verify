@@ -33,7 +33,7 @@ defmodule XqlVerify.MixProject do
     [
       {:ecto_sql, "~> 3.2"},
       {:jason, "~> 1.0"},
-      {:myxql, "~> 0.2"},
+      {:myxql, github: "elixir-ecto/myxql", branch: "wm-cache", override: true},
       {:stream_data, "~> 0.4"}
     ]
   end

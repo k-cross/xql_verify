@@ -4,7 +4,7 @@ config :ex_unit, timeout: :infinity
 config :xql_verify, XqlVerify.Repo,
   log: :debug,
   username: "foo",
-  ownership_timeout: :infinity,
+  #ownership_timeout: :infinity,
   password: "fake_pw",
   database: "foo",
   hostname: "localhost"
