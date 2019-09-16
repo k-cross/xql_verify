@@ -1,5 +1,5 @@
 use Mix.Config
 
 config :xql_verify, XqlVerify.Repo,
-  log: :warn,
+  log: false,
   pool: Ecto.Adapters.SQL.Sandbox
