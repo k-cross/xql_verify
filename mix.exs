@@ -22,7 +22,7 @@ defmodule XqlVerify.MixProject do
   def application do
     [
       mod: {XqlVerify, []},
-      extra_applications: [:logger, :myxql, :ecto_sql]
+      extra_applications: [:logger, :mariaex, :ecto_sql]
     ]
   end
 
@@ -31,9 +31,9 @@ defmodule XqlVerify.MixProject do
 
   defp deps do
     [
-      {:ecto_sql, "~> 3.2"},
+      {:ecto_sql, "~> 3.1.0"},
       {:jason, "~> 1.0"},
-      {:myxql, github: "elixir-ecto/myxql", branch: "wm-cache", override: true},
+      {:mariaex, "~> 0.1"},
       {:stream_data, "~> 0.4"}
     ]
   end

@@ -1,5 +1,6 @@
 use Mix.Config
 
+config :mariaex, json_library: Jason
 config :ex_unit, timeout: :infinity
 config :xql_verify, XqlVerify.Repo,
   log: :debug,
